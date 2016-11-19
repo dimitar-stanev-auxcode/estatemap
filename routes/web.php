@@ -35,10 +35,10 @@ Route::group(['prefix' => '/имоти'], function()
 	Route::post('{deal_type}/{estate_type}/{room_count}/{equipped}', 'EstatesController@get_estates_by_main_parameters_json');
 
 	// estates by main parameters and additional filters (currently returns a view + JSON data)
-	Route::get('{deal_type}/{estate_type}/{room_count}/{equipped}/{additional_filter}');
+	Route::get('{deal_type}/{estate_type}/{room_count}/{equipped}/{additional_filter}', 'EstatesController@get_estates_by_additional_filter');
 
 	// estates by main parameters and additional filters (currently returns only JSON data)
-	Route::post('{deal_type}/{estate_type}/{room_count}/{equipped}/{additional_filter}');
+	Route::post('{deal_type}/{estate_type}/{room_count}/{equipped}/{additional_filter}', 'EstatesController@get_estates_by_additional_filter_json');
 });
 
 Auth::routes();

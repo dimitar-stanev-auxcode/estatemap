@@ -49,6 +49,21 @@ class EstatesController extends Controller
         // THIS FUNCTION WILL DO THE SAME AS THE ONE ABOVE, EXCEPT THAT IT WILL HANDLE AN ADDITIONAL FILTER
         // ASSOCIATIVE ARRAY VARIABLE AND WILL USE ELOQUENT TO RETRIEVE THE DATA FROM THE DATABASE AND
         // CONVERT IT TO JSON FORMAT, JUST LIKE THE FUNCTION ABOVE
+
+        // convert room count phrase into an integer
+        $real_room_count = $this->get_room_count_by_phrase($room_count, $estate_type);
+        
+        // parse the additional URL parameters into an associative array
+        parse_str($additional_filter, $all_filters)
+
+        // use laravel helper functions to add the 4 main parameters into the all_filters array
+        array_add($all_filters, 'tip_sdelka', $deal_type);
+        array_add($all_filters, 'vid_imot', $estate_type);
+        array_add($all_filters, 'stai', $real_room_count);
+        array_add($all_filters, 'obzaveden', $equipped);
+
+        // return the array
+        print_r($all_filters);
     }
 
     /* View-return-type functions
