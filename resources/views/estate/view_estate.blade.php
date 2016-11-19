@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/home.css">
 	<link rel="stylesheet" type="text/css" href="/css/custom.css">
 @endsection
-
 <?php
     // define photos array
     $photosArray = array();
