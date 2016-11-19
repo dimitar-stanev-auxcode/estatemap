@@ -1,0 +1,241 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar-holder {
+    z-index: 1000;
+    position: fixed;
+    left:  0px;
+    width: 50px;
+    height: 100%;
+    overflow-x: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+    display: block;
+    z-index: 1000;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+#sidebar-wrapper-submenu {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: #2C3542!important;
+    z-index: 1000;
+    left: 50px;
+    width: 155px; /* 150px */
+    height: 100%;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-holder {
+    left: -50px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -50px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: auto;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 50px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-holder {
+        left: 0;
+    }
+
+    #wrapper.toggled #sidebar-holder {
+        left:  -50px;
+    }
+
+    #page-content-wrapper {
+        
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    /* Restourants Open */
+    .menuisopen .wrapper-open-restourants {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-restourants #sidebar-holder {
+        width: 200px;
+    }
+    /* Shops Open */
+    .menuisopen .wrapper-open-shops {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-shops #sidebar-holder {
+        width: 200px;
+    }
+    /* Transport Open */
+    .menuisopen .wrapper-open-transports {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-transports #sidebar-holder {
+        width: 200px;
+    }
+    /* Emergency Open */
+    .menuisopen .wrapper-open-emergency {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-emergency #sidebar-holder {
+        width: 200px;
+    }
+}
+@media(max-width:768px) {
+    #wrapper {
+        padding-left: 50px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-holder {
+        left: 0;
+    }
+
+    #wrapper.toggled #sidebar-holder {
+        left:  -50px;
+    }
+
+    #page-content-wrapper {
+        
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    /* Restourants Open */
+    .menuisopen .wrapper-open-restourants {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-restourants #sidebar-holder {
+        width: 200px;
+    }
+    /* Shops Open */
+    .menuisopen .wrapper-open-shops {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-shops #sidebar-holder {
+        width: 200px;
+    }
+    /* Transport Open */
+    .menuisopen .wrapper-open-transports {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-transports #sidebar-holder {
+        width: 200px;
+    }
+    /* Emergency Open */
+    .menuisopen .wrapper-open-emergency {
+        padding-left: 200px!important;
+    }
+    .menuisopen .wrapper-open-emergency #sidebar-holder {
+        width: 200px;
+    }
+}
+
+.menuisopen .wrapper-open-restourants #typeofrestourants {
+    display: block!important;
+}
+.menuisopen .wrapper-open-shops #sidebar-wrapper-submenu #typeofshops {
+    display: block!important;
+}
+.menuisopen .wrapper-open-transports #sidebar-wrapper-submenu #typeoftransport {
+    display: block!important;
+}
+.menuisopen .wrapper-open-emergency #sidebar-wrapper-submenu #typeofemergency {
+    display: block!important;
+}

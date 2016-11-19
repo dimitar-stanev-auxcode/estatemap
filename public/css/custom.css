@@ -1,0 +1,13 @@
+.navbar {
+	margin-bottom: 0px !important;
+	padding: 5px 0px;
+}
+
+.navbar.navbar-info {
+	background-color: #486887;
+}
+
+.fix-glyphicon {
+	position: relative;
+	top: 3px;
+}

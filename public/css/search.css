@@ -1,0 +1,180 @@
+/*
+Cradit: http://tympanus.net/codrops/2014/11/04/simple-morphing-search/
+*/
+
+.morphsearch {
+	width: 360px;
+	min-height: 40px;
+	background: #ffffff;
+	position: absolute;
+	z-index: 1000;
+	top:10px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	border: 0;
+	border-radius: 4px;
+	height: 54px;
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+	-webkit-transition-property: min-height, width, top, right;
+	transition-property: min-height, width, top, right;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+#close_button_search{
+	display: none;
+		position: absolute;
+	right: 2em;
+	top: 1em;
+	cursor: pointer;
+	color: black;
+}
+
+
+
+
+.morphsearch-input {
+	width: 100%;
+	height: 100%;
+	padding: 0 10% 0 10px;
+	font-weight: 700;
+	border: none;
+	background: transparent;
+	font-size: 0.8em;
+	color: #ec5a62;
+	-webkit-transition: font-size 0.5s cubic-bezier(0.7,0,0.3,1);
+	transition: font-size 0.5s cubic-bezier(0.7,0,0.3,1);
+}
+
+.morphsearch-input::-ms-clear { /* remove cross in IE */
+    display: none;
+}
+
+.morphsearch.hideInput .morphsearch-input {
+	color: transparent;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+
+/* placeholder */
+.morphsearch-input::-webkit-input-placeholder {
+	color: #ccc;
+}
+
+.morphsearch-input:-moz-placeholder {
+	color: #ccc;
+}
+
+.morphsearch-input::-moz-placeholder {
+	color: #ccc;
+}
+
+.morphsearch-input:-ms-input-placeholder {
+	color: #ccc;
+}
+.placeholder {
+	color: #ccc !important;
+}
+
+/* hide placeholder when active in Chrome */
+.gn-search:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+input[type="search"] { /* reset normalize */
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;	
+}
+
+.morphsearch-input:focus,
+.morphsearch-submit:focus {
+	outline: none;
+}
+.morphsearch-input:focus #close_button_search{
+	display: inline;
+}
+.morphsearch-submit {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	text-indent: 10000px;
+	overflow: visible;
+	right: 2%;
+	top: 13px;
+	background: transparent url(../images/magnifier.png) no-repeat center center;
+	background-size: 70%;
+	border: none;
+	pointer-events: none;
+	opacity: 1;
+	transition: all 0.6s;
+}
+.mph-input:focus #close_button_search{display: inline;}
+.morphsearch-close {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	overflow: hidden;
+	text-indent: 100%;
+	cursor: pointer;
+	pointer-events: none;
+	opacity: 0;
+	-webkit-transform: scale3d(0,0,1);
+	transform: scale3d(0,0,1);
+}
+
+.morphsearch.open #close_button_search{
+	display: inline;
+		position: absolute;
+	right: 2em;
+	top: 1em;
+	cursor: pointer;
+	color: black;
+}
+
+.morphsearch-close::before,
+.morphsearch-close::after {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	border-radius: 3px;
+	opacity: 1;
+	background: #666666;
+}
+
+.morphsearch-close:hover.morphsearch-close::before,
+.morphsearch-close:hover.morphsearch-close::after {
+	background: #B33C28;
+}
+
+.morphsearch-close::before {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.morphsearch-close::after {
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.morphsearch-content {
+	color: #333;
+	margin-top: 81px;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	padding: 0 10.5%;
+	background: #ffffff;
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+

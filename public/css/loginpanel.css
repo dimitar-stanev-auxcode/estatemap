@@ -1,0 +1,177 @@
+/* Customersloginportal.html CSS */
+/* Copy Right © by FNT COMPANY */
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* Inputs Place Holder Text Color */
+*::-webkit-input-placeholder {
+	text-transform: uppercase;
+	font-family: Roboto, Arial, sans-serif;
+    color: black;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+  
+	text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+    color: black;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+  
+	text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+    color: black;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+  
+	text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+    color: black;
+}
+/*      ------------      */
+.loginpanel {
+	display: block;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	width: 600px;
+	height: auto;
+	border: 2px solid black;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.loginpanel .inputdata {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 480px;
+	border: 0;
+	border: 2px solid black;
+	font-size: 20px;
+	padding: 26px 20px;
+	color: black;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	-webkit-transition:background .3s linear,color .3s linear;
+	-moz-transition:background .3s linear,color .3s linear;
+	-ms-transition:background .3s linear,color .3s linear;
+	transition:background .3s linear,color .3s linear;
+	font-family: Roboto, Arial, sans-serif;
+}
+.loginpanel .inputdata:focus {
+	background-color: black;
+	color: white;
+	-webkit-transition:background .3s linear,color .3s linear;
+	-moz-transition:background .3s linear,color .3s linear;
+	-ms-transition:background .3s linear,color .3s linear;
+	transition:background .3s linear,color .3s linear;
+}
+.loginpanel .inputdataP {
+	padding: relative;
+	color: black;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "Open Sans",sans-serif;
+	text-align: left;
+    padding-left: 36px;
+    padding-bottom: 10px;
+}
+.loginpanel .loginpaneltitle {
+	padding: relative;
+	color: black;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: bolder;
+	font-family: "Open Sans",sans-serif;
+	padding: 40px;
+}
+#loginbutton {
+    position: relative;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	background: transparent;
+	font-size: 15px;
+	padding: 25px 50px;
+	color: black;
+	font-style: bolder;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	cursor: pointer;
+	transition: all 0.4s linear;
+}
+#loginbutton:hover {
+	background: black;
+	color: white;
+}
+.LoginErrorNotification {
+	position: relative;
+	top: 10px;
+	width: 475px;
+	margin: 0 auto;
+	border: 2px solid black;
+	background: transparent;
+	font-size: 15px;
+	padding: 25px 10px;
+	color: black;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-bottom: 15px;
+	font-family: "Open Sans",sans-serif;
+}
+.LoginErrorSymbol {
+	position: absolute;
+	top: 8px;
+	left: -50px;
+	width: 50px;
+	height: 50px;
+}
+@media screen and (max-width: 620px) {
+	.loginpanel .inputdataP {
+		padding-left: 26px;
+	}
+	       .loginpanel {
+	       width: 400px;
+	       margin-bottom: 20px;
+       }
+           .loginpanel .inputdata {
+	       width: 300px;
+
+       }
+       .LoginErrorNotification {
+		width: 250px;
+	}
+	.LoginErrorSymbol {
+		left: -50px;
+		top: 17px;
+	}
+	}
+@media screen and (max-width: 404px) {
+	.loginpanel .inputdataP {
+		padding-left: 16px;
+	}
+	       .loginpanel {
+	       width: 340px;
+	       margin-bottom: 20px;
+       }
+           .loginpanel .inputdata {
+	       width: 260px;
+
+       }
+       .LoginErrorSymbol {
+		display: none;
+	}
+	}

@@ -1,0 +1,82 @@
+	
+	.regions {
+		position: absolute;
+		left: 5%;
+		width: 88%;
+		border:1px solid #999;
+		color: #000;
+	}
+	
+	.regionsList {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.regionsList li {
+		list-style-type: none;
+		margin: 0px 0px 3px 0px;
+		padding: 2%;
+		cursor: pointer;
+	}
+	
+	.regionsList li:hover {
+		background-color: #659CD8;
+	}
+	.popis {
+		position: absolute;
+		left: 18%;
+		margin: 10px 0px 0px 0px;
+		top:25%;
+		width: 50%;
+		font-size: 0.8em;
+		color: #ec5a62;
+		height: auto;
+		max-height: 300px;
+		overflow-y:auto; 
+		z-index: 1600;
+		background-color: white
+	}
+	
+	.popisList {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.popisList li {
+		list-style-type: none;
+		margin: 0px 0px 3px 0px;
+		padding: 3px;
+		cursor: pointer;
+	}
+	
+	.popisList li:hover {
+		background-color: #659CD8;
+	}
+
+	.autocomplete{
+		position:absolute;
+		width:90%;
+		left:5%;
+		top:80%;
+		height:auto;
+		background-color:#333;
+		z-index:99;
+
+		display:none;
+
+	}
+	.autocomplete ul{
+		padding:0px;
+		list-style:none;
+	}
+	.autocomplete ul li{
+		padding:5px;
+	}
+	.autocomplete ul li:hover{
+		background-color:#659CD8 !important;
+		color:white !important;
+	}
+	.autocomplete a{
+		color:white !important;
+
+	}

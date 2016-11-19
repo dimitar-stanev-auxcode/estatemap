@@ -1,0 +1,158 @@
+body {
+	background-color: #dedede;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+div.estate-container {
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-bottom: 2px solid #ccc;
+}
+
+div.estate-container header.estate-header h1 {
+	font-size: 28px;
+	font-weight: 400;
+	margin-top: 0px;
+	font-family: 'Open Sans';
+}
+
+div.estate-images {
+	padding-right: 40px;
+	padding-left: 25px;
+	border-left: 1px solid #EDEDED;
+}
+
+div.estate-breadcumb {
+	border-radius: 2px;
+	background-color: #f2f2f2;
+	padding: 5px 10px;
+	margin-top: 8px;
+	margin-bottom: 30px;
+}
+
+.estate-breadcumb .row {
+	margin: 20px 0px;
+}
+
+.estate-breadcumb .heading {
+	font-size: 20px;
+	display: block;
+}
+
+.estate-breadcumb-heading {
+	font-size: 20px;
+	display: block;
+}
+
+div.estate-data,
+div.estate-top {
+	padding-left: 25px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+
+div.estate-top {
+	padding-right: 30px;
+}
+
+div.estate-top-inner {
+	background-color: #E8E8E8;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 15px;
+	border-radius: 2px;
+}
+
+section.estate-inner-main {
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+section.estate-inner-main .estate-value {
+	font-weight: normal;
+}
+
+span.estate-key {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+span.estate-value {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+span.estate-key-large {
+	font-size: 20px;
+}
+
+span.estate-value-large {
+	color: #486887;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+span.estate-value-large-sub {
+	color: #999;
+	font-size: 16px;
+}
+
+div.price-tag
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+a {
+	color: #555;
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
+
+a:hover,
+a:focus {
+	color: #486887;
+	text-decoration: none;
+}
+
+span.glyphicon.glyphicon-home,
+span.glyphicon.glyphicon-chevron-right {
+	color: #555;
+}
+
+span.glyphicon.glyphicon-chevron-right {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+span.glyphicon.glyphicon-home {
+	margin-right: 10px;
+}
+
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+	-webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+	box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+	border-radius: 2px;
+	border: 5px solid #FFF;
+}
